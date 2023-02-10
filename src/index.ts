@@ -116,11 +116,9 @@ const createServer = ({
 
   const defaultViewport: Viewport = { width: 1440, height: 770 };
   const puppeteerOptions: PuppeteerOptions = {
-    product: 'chrome',
-    defaultViewport,
     headless: true,
-    ignoreHTTPSErrors: false, // whether to ignore HTTPS errors during navigation
-  };
+    args: ['--no-sandbox','--disable-setuid-sandbox']
+  }
 
   const defaultViewportHeightForVH = 1050;
 
