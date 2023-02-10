@@ -1,22 +1,23 @@
 /// <reference types="node" />
+/// <reference types="node" />
 import type https from 'https';
 import type http from 'http';
 import type { RequestOptions, ServerOptions } from 'https';
 import type { BrowserLaunchArgumentOptions, BrowserConnectOptions, LaunchOptions, Product } from 'puppeteer';
 import type { CookieOptions } from 'express';
 import type { CorsOptions } from 'cors';
-export declare type ServerConfigurationOptions = {
+export type ServerConfigurationOptions = {
     SERVER_ROOT: string;
     PORT: number;
     CORS_OPTIONS?: CorsOptions;
     COOKIE_SETTING?: CookieOptions;
     ALLOW_HTTP_PROXY?: boolean;
 };
-export declare type PuppeteerOptions = LaunchOptions & BrowserConnectOptions & BrowserLaunchArgumentOptions & {
+export type PuppeteerOptions = LaunchOptions & BrowserConnectOptions & BrowserLaunchArgumentOptions & {
     product?: Product;
     extraPrefsFirefox?: Record<string, unknown>;
 };
-export declare type PageDimensions = {
+export type PageDimensions = {
     width: number;
     height: number;
 };
@@ -26,10 +27,10 @@ export interface Viewport extends PageDimensions {
     isLandscape?: boolean;
     hasTouch?: boolean;
 }
-export declare type ServerHostPortSSL = {
+export type ServerHostPortSSL = {
     parsedHost: string;
     parsedPort: number;
     parsedSSL: typeof https | typeof http;
     pathname?: string;
 };
-export declare type ProxyRequestOptions = RequestOptions & ServerOptions;
+export type ProxyRequestOptions = RequestOptions & ServerOptions;

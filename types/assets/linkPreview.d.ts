@@ -1,0 +1,11 @@
+declare function isURLAbsolute(url: any): boolean;
+declare function copyOnClick(button: any, url: any): Promise<void>;
+declare const faviconEmptyString: "<span class=\"pdftron-link-favicon-empty\"></span>";
+declare function successLoadingImage(img: any): void;
+declare function getHostName(hostname: any): any;
+declare function popupDefaultInnerHTML(faviconString: any, pageTitle: any, href: any): string;
+declare function setPopupPosition(linkElem: any, popupElem: any): void;
+declare function resetElemStyle(el: any, key: any, value: any): void;
+declare function linkPreviewPopup(): void;
+declare const debounceLinkPreviewOnMutation: (...args: any[]) => void;
+declare const debounceLinkPreviewOnTransition: (...args: any[]) => void;
