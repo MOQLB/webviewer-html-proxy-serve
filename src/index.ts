@@ -72,7 +72,7 @@ const createServer = ({
   CORS_OPTIONS = { origin: `${SERVER_ROOT}:3000`, credentials: true },
   COOKIE_SETTING = {},
   ALLOW_HTTP_PROXY = true
-}: ServerConfigurationOptions): void => {
+}: ServerConfigurationOptions): any => {
   const { align, colorize, combine, printf, timestamp } = format;
   const logger = createLogger({
     format: combine(
@@ -536,6 +536,8 @@ const createServer = ({
 
   app.listen(PORT);
   logger.info(`Running on ${PATH}`);
+
+  return app;
 };
 
 export { createServer };
