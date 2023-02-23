@@ -27,5 +27,5 @@ import type { ServerConfigurationOptions } from './utils/types.js';
     PORT: 3100
    });
  */
-declare const createServer: ({ SERVER_ROOT, PORT, CORS_OPTIONS, COOKIE_SETTING, ALLOW_HTTP_PROXY }: ServerConfigurationOptions) => void;
+declare const createServer: ({ SERVER_ROOT, PORT, CORS_OPTIONS, COOKIE_SETTING, ALLOW_HTTP_PROXY }: ServerConfigurationOptions) => any;
 export { createServer };

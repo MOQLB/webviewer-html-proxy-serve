@@ -534,7 +534,7 @@ const createServer = ({
     }
   });
 
-  app.listen(PORT);
+  // app.listen(PORT);
   logger.info(`Running on ${PATH}`);
 
   return app;

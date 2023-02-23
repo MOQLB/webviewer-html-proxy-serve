@@ -1,6 +1,6 @@
 {
   "name": "@drebakare/webviewer-html-proxy-server",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "This is a proxy server to use with @pdftron/webviewer-html",
   "main": "dist/main.js",
   "author": "Mosaiqlabs",
