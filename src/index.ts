@@ -112,6 +112,10 @@ const createServer = ({
   app.use(cookieParser());
   app.use(cors(CORS_OPTIONS));
 
+  app.listen(PORT, ()=> {
+    console.log("listeninng to this port")
+  });
+
   const PATH = `${SERVER_ROOT}:${PORT}`;
 
   const defaultViewport: Viewport = { width: 1440, height: 770 };
@@ -534,7 +538,6 @@ const createServer = ({
     }
   });
 
-  // app.listen(PORT);
   logger.info(`Running on ${PATH}`);
 
   return app;
